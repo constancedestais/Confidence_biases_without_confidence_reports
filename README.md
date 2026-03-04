@@ -19,10 +19,20 @@ This repository provides scripts to:
   Main statistics script. Prints manuscript-ready stats to console.
 - `Functions/`  
   Reusable helper modules for preprocessing, plotting, and statistics.
-- `Data/`  
-  Input CSV files (local only; git-ignored).
 - `Outputs/`  
-  Generated figures and text outputs (local only; git-ignored).
+  Generated figures and text outputs.
+- `Data/`  
+  Input CSV files.
+
+## Required Data Files
+Data files will be made available online.
+Place these files in the Data/ directory:
+- CD1_LearningTask.csv
+- CD1_PairChoice.csv
+- CD1_SymbolChoice.csv
+- CD1_BonusRound.csv
+- CD1_Demographics.csv
+- CD1_General.csv
 
 ## Requirements
 
@@ -49,16 +59,6 @@ source .venv/bin/activate
 pip install numpy pandas scipy statsmodels matplotlib seaborn scikit-learn patsy
 mkdir -p Outputs/Figures
 ```
-
-## Required Data Files
-Data files will be made available online.
-Place these files in the Data/ directory:
-- CD1_LearningTask.csv
-- CD1_PairChoice.csv
-- CD1_SymbolChoice.csv
-- CD1_BonusRound.csv
-- CD1_Demographics.csv
-- CD1_General.csv
 
 ## Run Analyses
 1) Statistics for manuscript text
