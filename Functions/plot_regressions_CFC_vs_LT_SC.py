@@ -12,8 +12,8 @@ from scipy.stats import norm
 import matplotlib
 
 from Functions.significance_stars import significance_stars 
-#matplotlib.use("Agg")  # non-interactive backend
-matplotlib.use("TkAgg")  # or "Qt5Agg", depending on what you have installed
+matplotlib.use("Agg")  # non-interactive backend
+#matplotlib.use("TkAgg")  # or "Qt5Agg", depending on what you have installed
 import matplotlib.pyplot as plt
 from Functions.set_axes_size import set_axes_size_inches
 from Functions.my_colors import load_my_colors

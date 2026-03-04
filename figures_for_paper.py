@@ -374,7 +374,6 @@ for requested_subset in requested_subsets:
                         './Outputs/Figures/plot_winning_regression_coeff_CFC_vs_'+task+'_'+version_code+'.svg',
                         './Outputs/Figures/plot_winning_regression_two_intercepts_CFC_vs_'+task+'_'+version_code+'.svg',
                         './Outputs/Figures/plot_winning_regression_piechart_CFC_vs_'+task+'_'+version_code+'.svg'],
-            df = dataframes.copy(),
             )
         a=1
 

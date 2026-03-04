@@ -1,0 +1,25 @@
+                                   OLS Regression Results                                   
+============================================================================================
+Dep. Variable:     CFC_chose_highest_expected_value   R-squared:                       0.063
+Model:                                          OLS   Adj. R-squared:                  0.058
+Method:                               Least Squares   F-statistic:                     13.33
+Date:                              Wed, 04 Mar 2026   Prob (F-statistic):           0.000334
+Time:                                      23:12:09   Log-Likelihood:                -920.84
+No. Observations:                               200   AIC:                             1846.
+Df Residuals:                                   198   BIC:                             1852.
+Df Model:                                         1                                         
+Covariance Type:                          nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+Intercept                     66.7107      1.744     38.253      0.000      63.272      70.150
+SC_correct_gain_minus_loss     0.2298      0.063      3.651      0.000       0.106       0.354
+==============================================================================
+Omnibus:                       18.985   Durbin-Watson:                   2.032
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               21.784
+Skew:                          -0.801   Prob(JB):                     1.86e-05
+Kurtosis:                       3.216   Cond. No.                         28.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

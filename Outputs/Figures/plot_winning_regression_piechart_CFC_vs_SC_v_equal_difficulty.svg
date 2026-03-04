@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="76.180645pt" height="76.675325pt" viewBox="0 0 76.180645 76.675325" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-03-04T23:12:12.054602</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 76.675325 
+L 76.180645 76.675325 
+L 76.180645 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 38.09031 13.303424 
+C 34.212183 13.303424 30.386585 14.204582 26.916215 15.935593 
+C 23.445845 17.666604 20.424714 20.180577 18.09187 23.278593 
+C 15.759025 26.376609 14.177662 29.974744 13.472906 33.788297 
+C 12.768151 37.60185 12.959093 41.527513 14.030626 45.254668 
+C 15.102158 48.981823 17.025254 52.409504 19.647747 55.266494 
+C 22.270241 58.123485 25.52109 60.332391 29.143072 61.718433 
+C 32.765054 63.104476 36.660051 63.630107 40.519871 63.253737 
+C 44.379691 62.877366 48.099775 61.60919 51.385769 59.549552 
+L 38.09031 38.337667 
+z
+" style="fill: #dce8f4"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 51.385766 59.549554 
+C 54.866906 57.367601 57.757981 54.361877 59.802971 50.798553 
+C 61.84796 47.23523 62.984669 43.222689 63.112442 39.11624 
+C 63.240216 35.009791 62.35517 30.934342 60.535669 27.250773 
+C 58.716168 23.567206 56.017553 20.387556 52.678801 17.993399 
+L 38.09031 38.337667 
+z
+" style="fill: #fbebd9"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 52.678801 17.993399 
+C 50.565205 16.477779 48.228267 15.300749 45.75223 14.504742 
+C 43.276193 13.708734 40.691169 13.303425 38.090325 13.303424 
+L 38.09031 38.337667 
+z
+" style="fill: #ddd2c6"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle" x="23.6545" y="44.297481" transform="rotate(-0 23.6545 44.297481)">58.9%</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle" x="53.10359" y="40.614413" transform="rotate(-0 53.10359 40.614413)">31.2%</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle" x="42.687455" y="25.847519" transform="rotate(-0 42.687455 25.847519)">9.9%</text>
+   </g>
+  </g>
+ </g>
+</svg>

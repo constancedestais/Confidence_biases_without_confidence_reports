@@ -26,12 +26,8 @@ def filter_experiment_version(dataframes, version_name):
     # check type of column is compatible with using .unique() function
     # get name of first dataframe in dictionary
     df_name = list(dataframes.keys())[0]
-    assert type(dataframes[df_name]['exp_ID'].unique()) == np.ndarray, "Error: exp_ID column should be of type numpy.ndarray in order to use .unique()"
-    # then check that there are 4 unique experiment IDs
-    # CONSTANCE assert dataframes[df_name]['exp_ID'].nunique() == 4, "Error: There should be 4 unique experiment IDs."
 
     # filter dataframes based on requested version name
-
 
     if version_name == 'all':
         # if version name is 'all', return the dataframes as is

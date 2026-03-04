@@ -1,0 +1,27 @@
+                                   OLS Regression Results                                   
+============================================================================================
+Dep. Variable:     CFC_chose_highest_expected_value   R-squared:                       0.143
+Model:                                          OLS   Adj. R-squared:                  0.130
+Method:                               Least Squares   F-statistic:                     10.87
+Date:                              Wed, 04 Mar 2026   Prob (F-statistic):           1.22e-06
+Time:                                      23:12:09   Log-Likelihood:                -911.97
+No. Observations:                               200   AIC:                             1832.
+Df Residuals:                                   196   BIC:                             1845.
+Df Model:                                         3                                         
+Covariance Type:                          nonrobust                                         
+========================================================================================================
+                                           coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+Intercept                               59.8427      2.921     20.487      0.000      54.082      65.603
+C(identify_best)[T.1]                   14.0777      3.304      4.260      0.000       7.561      20.594
+C(LT_unequal_difficulty_binary)[T.1]    -0.5117      3.350     -0.153      0.879      -7.118       6.095
+SC_correct_gain_minus_loss               0.2318      0.061      3.778      0.000       0.111       0.353
+==============================================================================
+Omnibus:                       12.440   Durbin-Watson:                   2.225
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               13.627
+Skew:                          -0.638   Prob(JB):                      0.00110
+Kurtosis:                       2.907   Cond. No.                         71.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

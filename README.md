@@ -1,6 +1,6 @@
 # Confidence Biases Without Confidence Reports
 
-Analysis code for a behavioral study on confidence-related biases without explicit confidence reports, using multiple task datasets and paper-ready figures/statistics.
+Code for statistics and figures in paper and Supplementary Material. Paper DOI: [WILL BE ADDED UPON ACCEPTANCE OF THE PAPER]
 
 ## Overview
 
@@ -36,7 +36,7 @@ Place these files in the Data/ directory:
 
 ## Requirements
 
-Use Python **3.10+** (the code uses `match/case`).
+Use Python **3.14.0+** (the code uses `match/case`).
 
 Python packages used in the project:
 

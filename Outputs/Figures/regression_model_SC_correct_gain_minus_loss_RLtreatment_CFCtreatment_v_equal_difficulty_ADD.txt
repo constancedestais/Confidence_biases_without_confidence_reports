@@ -1,0 +1,27 @@
+                                   OLS Regression Results                                   
+============================================================================================
+Dep. Variable:     CFC_chose_highest_expected_value   R-squared:                       0.123
+Model:                                          OLS   Adj. R-squared:                  0.109
+Method:                               Least Squares   F-statistic:                     9.226
+Date:                              Wed, 04 Mar 2026   Prob (F-statistic):           9.67e-06
+Time:                                      23:12:08   Log-Likelihood:                -914.66
+No. Observations:                               202   AIC:                             1837.
+Df Residuals:                                   198   BIC:                             1851.
+Df Model:                                         3                                         
+Covariance Type:                          nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+Intercept                     59.4687      2.799     21.248      0.000      53.949      64.988
+C(click_desired)[T.1]          1.7380      3.190      0.545      0.586      -4.553       8.029
+C(identify_best)[T.1]         11.4144      3.188      3.580      0.000       5.127      17.702
+SC_correct_gain_minus_loss     0.2311      0.059      3.944      0.000       0.116       0.347
+==============================================================================
+Omnibus:                        8.865   Durbin-Watson:                   2.176
+Prob(Omnibus):                  0.012   Jarque-Bera (JB):                9.021
+Skew:                          -0.485   Prob(JB):                       0.0110
+Kurtosis:                       2.638   Cond. No.                         71.4
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

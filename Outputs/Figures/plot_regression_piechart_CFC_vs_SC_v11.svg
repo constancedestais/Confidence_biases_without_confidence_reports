@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="76.180645pt" height="76.675325pt" viewBox="0 0 76.180645 76.675325" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-03-04T23:12:12.771616</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 76.675325 
+L 76.180645 76.675325 
+L 76.180645 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 38.090429 13.140757 
+C 31.410358 13.140757 24.997051 15.797236 20.273527 20.52076 
+C 15.550003 25.244284 12.893524 31.65759 12.893524 38.337662 
+C 12.893524 45.017734 15.550003 51.431041 20.273527 56.154565 
+C 24.997051 60.878089 31.410358 63.534568 38.090429 63.534568 
+L 38.090429 38.337662 
+z
+" style="fill: #dce8f4"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 38.09043 63.534568 
+C 43.722945 63.534568 49.196009 61.645931 53.629832 58.172253 
+C 58.063656 54.698574 61.207204 49.836531 62.555156 44.367686 
+C 63.903106 38.898842 63.37914 33.132822 61.067484 27.996532 
+C 58.755828 22.860242 54.787366 18.644478 49.800023 16.026915 
+L 38.090429 38.337662 
+z
+" style="fill: #fbebd9"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 49.800023 16.026915 
+C 48.000626 15.082519 46.093568 14.359264 44.12045 13.872934 
+C 42.147331 13.386604 40.122603 13.140757 38.090433 13.140757 
+L 38.090429 38.337662 
+z
+" style="fill: #ddd2c6"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle" x="22.972286" y="40.147273" transform="rotate(-0 22.972286 40.147273)">50.0%</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle" x="52.769267" y="43.765279" transform="rotate(-0 52.769267 43.765279)">42.3%</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle" x="41.708434" y="25.468433" transform="rotate(-0 41.708434 25.468433)">7.7%</text>
+   </g>
+  </g>
+ </g>
+</svg>
