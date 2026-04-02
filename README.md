@@ -66,9 +66,10 @@ Create and activate a virtual environment, install dependencies, and create outp
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install numpy pandas scipy statsmodels matplotlib seaborn scikit-learn patsy
-mkdir -p Outputs/Figures
+pip install -r requirement.txt
 ```
+
+Then add the Data and Outputs folders from figshare (link provided in paper) into the project directory.
 
 ## Run Analyses
 1) Statistics for manuscript text
