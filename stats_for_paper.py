@@ -26,7 +26,7 @@ from Functions.stats_helpers import run_one_sample_ttest_and_format, run_paired_
 directories = project_paths_for_main(__file__)
 
 CSV_FILENAMES: dict[str, str] = {
-    "LearningTask": "CD1_LearningTask.csv",
+    "LearningTask": "LearningTask.csv",
     "PairChoice": "CD1_PairChoice.csv",
     "SymbolChoice": "CD1_SymbolChoice.csv",
     "BonusRound": "CD1_BonusRound.csv",

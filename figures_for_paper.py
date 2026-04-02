@@ -47,7 +47,7 @@ current_data_dir = os.path.join(data_dir)
 
 # specify the filenames of the CSV files
 csv_filenames = {
-    'LearningTask': 'CD1_LearningTask.csv',
+    'LearningTask': 'LearningTask.csv',
     'PairChoice'  : 'CD1_PairChoice.csv',
     'SymbolChoice': 'CD1_SymbolChoice.csv',
     'BonusRound'  : 'CD1_BonusRound.csv',
