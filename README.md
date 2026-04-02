@@ -36,18 +36,27 @@ Place these files in the Data/ directory:
 
 ## Requirements
 
-Use Python **3.14.0+** (the code uses `match/case`).
+Use Python **3.14.0+**
 
-Python packages used in the project:
+Python packages used in the project (c.f. requirements.txt)
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.61.1
+kiwisolver==1.4.9
+matplotlib==3.10.8
+numpy==2.4.2
+packaging==26.0
+pandas==2.3.3
+patsy==1.0.2
+pillow==12.1.1
+python-dateutil==2.9.0.post0
+pytz==2026.1.post1
+scipy==1.17.1
+seaborn==0.13.2
+six==1.17.0
+statsmodels==0.14.6
+tzdata==2025.3
 
-- `numpy`
-- `pandas`
-- `scipy`
-- `statsmodels`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-- `patsy`
 
 ## Setup
 
