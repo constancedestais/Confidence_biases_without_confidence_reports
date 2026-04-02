@@ -49,12 +49,13 @@ pip install -r requirement.txt
 
 Expected duration: 3min.
 
-## Instructions to run analyses 
+## Instructions to run and reproduce analyses 
 1) Statistics 
-- stats_for_paper.py
+- run stats_for_paper.py
+Stats are output in python terminal/console
 
 2) Figures 
-- figures_for_paper.py
+- run figures_for_paper.py
 Figure outputs are saved as .svg files in Outputs/Figures/.
 
 Expected duration: 4min.
