@@ -27,7 +27,7 @@ This repository provides scripts to:
 ## Required Data Files
 Data files will be made available online.
 Place these files in the Data/ directory:
-- CD1_LearningTask.csv
+- LearningTask.csv
 - CD1_PairChoice.csv
 - CD1_SymbolChoice.csv
 - CD1_BonusRound.csv
@@ -80,15 +80,16 @@ Most figure outputs are saved as .svg files in Outputs/Figures/.
 ## Experiment Version Groups Used in Code
 The function filter_experiment_version(...) supports these version filters:
 - all
-- cd1_2025_click_desired_1_identify_best_1
-- cd1_2025_click_desired_0_identify_best_1
-- cd1_2025_click_desired_1_identify_best_0
-- cd1_2025_click_desired_0_identify_best_0
-- cd1_2025_click_desired_1_identify_best_1_difficulty_0_70_0_80
-- cd1_2025_click_desired_1_identify_best_0_difficulty_0_70_0_80
-- versions_equal_difficulty_across_gain_loss
-- versions_asymmetric_difficulty_across_gain_loss
-- versions_equal_and_asymmetric_difficulty_click_desired_1
+- cd1_2025_click_desired_1_identify_best_1 (RL+/CFC+ in paper)
+- cd1_2025_click_desired_0_identify_best_1 (RL-/CFC+ in paper)
+- cd1_2025_click_desired_1_identify_best_0 (RL+/CFC- in paper)
+- cd1_2025_click_desired_0_identify_best_0 (RL-/CFC- in paper)
+- cd1_2025_click_desired_1_identify_best_1_difficulty_0_70_0_80 (asymRL+/CFC+ in paper)
+- cd1_2025_click_desired_1_identify_best_0_difficulty_0_70_0_80 (asymRL+/CFC- in paper)
+- versions_equal_difficulty_across_gain_loss (RL+/CFC+, RL-/CFC+, RL+/CFC-, RL-/CFC- in paper)
+- versions_asymmetric_difficulty_across_gain_loss (asymRL+/CFC+, asymRL+/CFC- in paper)
+- versions_equal_and_asymmetric_difficulty_click_desired_1 (asymRL+/CFC+, asymRL+/CFC-, RL+/CFC+, RL+/CFC-,in paper)
+
 
 ## Citation
 If you use this code, please cite the associated paper/preprint (add citation details here).
