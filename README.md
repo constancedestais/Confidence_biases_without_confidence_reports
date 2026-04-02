@@ -34,11 +34,12 @@ Place these files in the Data/ directory:
 - CD1_Demographics.csv
 - CD1_General.csv
 
-## Requirements (c.f. requirements.txt)
+## Requirements
 
 Use Python **3.14.0+**
 
-Python packages used in the project 
+Python packages used in the project (c.f. requirements.txt)
+
 contourpy==1.3.3
 cycler==0.12.1
 fonttools==4.61.1
