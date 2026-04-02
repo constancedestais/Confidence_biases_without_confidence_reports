@@ -11,28 +11,6 @@ This repository provides scripts to:
 - Run inferential statistics (t-tests, OLS, ANOVAs) for manuscript reporting
 - Generate SVG figures for publication
 
-## Repository Structure
-
-- `figures_for_paper.py`  
-  Main figure-generation script. Saves outputs to `Outputs/Figures/`.
-- `stats_for_paper.py`  
-  Main statistics script. Prints manuscript-ready stats to console.
-- `Functions/`  
-  Reusable helper modules for preprocessing, plotting, and statistics.
-- `Outputs/`  
-  Generated figures and text outputs.
-- `Data/`  
-  Input CSV files.
-
-## Required Data Files
-Data files will be made available online.
-Place these files in the Data/ directory:
-- LearningTask.csv
-- CD1_PairChoice.csv
-- CD1_SymbolChoice.csv
-- CD1_BonusRound.csv
-- CD1_Demographics.csv
-- CD1_General.csv
 
 ## Requirements
 
@@ -59,9 +37,9 @@ statsmodels==0.14.6
 tzdata==2025.3
 
 
-## Setup
+## Installation guide
 
-Create and activate a virtual environment, install dependencies, and create output folders:
+1) Create and activate a virtual environment, install dependencies :
 
 ```bash
 python -m venv .venv
@@ -69,15 +47,19 @@ source .venv/bin/activate
 pip install -r requirement.txt
 ```
 
-Then add the Data and Outputs folders from figshare (link provided in paper) into the project directory.
+2) Then add the Data and Outputs folders from figshare (link provided in paper) into the project directory. The Data folder contains the required behavioral data files, and the Outputs/Figures folder contains the expected output figures.
 
-## Run Analyses
-1) Statistics for manuscript text
+Expected duration: 3min.
+
+## Instructions to run analyses 
+1) Statistics 
 - stats_for_paper.py
 
-2) Figures for manuscript
+2) Figures 
 - figures_for_paper.py
-Most figure outputs are saved as .svg files in Outputs/Figures/.
+Figure outputs are saved as .svg files in Outputs/Figures/.
+
+Expected duration: 4min.
 
 ## Experiment Version Groups Used in Code
 The function filter_experiment_version(...) supports these version filters:
@@ -92,6 +74,28 @@ The function filter_experiment_version(...) supports these version filters:
 - versions_asymmetric_difficulty_across_gain_loss (asymRL+/CFC+, asymRL+/CFC- in paper)
 - versions_equal_and_asymmetric_difficulty_click_desired_1 (asymRL+/CFC+, asymRL+/CFC-, RL+/CFC+, RL+/CFC-,in paper)
 
-
 ## Citation
-If you use this code, please cite the associated paper/preprint (add citation details here).
+If you use this code, please cite the associated paper/preprint: [LINK WILL BE ADDED UPON ACCEPTANCE OF THE PAPER].
+
+## Repository Structure
+
+- `figures_for_paper.py`  
+  Main figure-generation script. Saves outputs to `Outputs/Figures/`.
+- `stats_for_paper.py`  
+  Main statistics script. Prints manuscript-ready stats to console.
+- `Functions/`  
+  Reusable helper modules for preprocessing, plotting, and statistics.
+- `Outputs/`  
+  Generated figures and text outputs.
+  Folder can be obtained in Figshare repository (cf. data-sharing link in paper).
+- `Data/`  
+  Input CSV files.
+  Folder can be obtained in Figshare repository (cf. data-sharing link in paper).
+
+## Required Data Files
+Download the Data folder available online (cf. data-sharing link in paper).
+The Data folder must contain the following files.
+- CD1_LearningTask.csv
+- CD1_PairChoice.csv
+- CD1_SymbolChoice.csv
+
