@@ -33,7 +33,7 @@ def project_paths_for_main(main_file: Optional[str | Path] = None) -> ProjectPat
     in main script, at the top
         directories = project_paths_for_main(__file__)
     to read data:
-        df = pd.read_csv(directories.data / "LearningTask.csv")
+        df = pd.read_csv(directories.data / "CD1_LearningTask.csv")
     to save figure:
         fig.savefig(directories.figures / "my_plot.svg")
     """

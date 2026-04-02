@@ -189,6 +189,21 @@ def create_participant_ID_column(df):
             result_df.loc[mask, 'participant_ID'] = id_map[pid]
     
     return result_df
+
+    ''''
+    # Extract condition values from the single exp_ID
+    click_desired, identify_best = df['exp_ID'].iloc[0].split('click_desired_')[1].split('_identify_best_')
+    click_desired = int(click_desired)
+    identify_best = int(identify_best)
+
+    # Get unique prolific_IDs and assign a sequential number
+    unique_ids = df['prolific_ID'].unique()
+    id_map = {pid: f"CD1_{click_desired}_{identify_best}_p{i+1}" for i, pid in enumerate(unique_ids)}
+
+    # Create the anonymized participant_ID column
+    df['participant_ID'] = df['prolific_ID'].map(id_map)
+    return df
+    '''
     
 def add_missing_participants(df, LearningTask, ID_and_info):
     """
