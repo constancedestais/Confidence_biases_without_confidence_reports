@@ -3,8 +3,8 @@
 Dep. Variable:     CFC_chose_highest_expected_value   R-squared:                       0.118
 Model:                                          OLS   Adj. R-squared:                  0.109
 Method:                               Least Squares   F-statistic:                     13.31
-Date:                              Wed, 04 Mar 2026   Prob (F-statistic):           3.76e-06
-Time:                                      23:12:11   Log-Likelihood:                -917.02
+Date:                              Thu, 02 Apr 2026   Prob (F-statistic):           3.76e-06
+Time:                                      15:51:17   Log-Likelihood:                -917.02
 No. Observations:                               202   AIC:                             1840.
 Df Residuals:                                   199   BIC:                             1850.
 Df Model:                                         2                                         

@@ -29,9 +29,6 @@ CSV_FILENAMES: dict[str, str] = {
     "LearningTask": "CD1_LearningTask.csv",
     "PairChoice": "CD1_PairChoice.csv",
     "SymbolChoice": "CD1_SymbolChoice.csv",
-    "BonusRound": "CD1_BonusRound.csv",
-    "Demographics": "CD1_Demographics.csv",
-    "General": "CD1_General.csv",
 }
 
 dataframes = load_multiple_csvs(directories.data, CSV_FILENAMES)
@@ -104,7 +101,6 @@ for requested_subset in requested_subsets:
         dataframes_reduced['LearningTask'],
         dataframes_reduced['SymbolChoice'],
         CFC_new_pairs,
-        dataframes_reduced['Demographics'],
     )
     # check that dependent and independent variables is not between 0 and 1
     assert merged_data_new_pairs["CFC_chose_highest_expected_value"].max() > 1.5, "Error: CFC_chose_highest_expected_value values look like they are still coded 0-1"
@@ -153,22 +149,6 @@ for exp_version in all_exp_versions:
     LearningTask = single_version_data["LearningTask"].copy()
     SymbolChoice = single_version_data["SymbolChoice"].copy()
     CFC = single_version_data["PairChoice"].copy()
-    Demographics = single_version_data["Demographics"].copy()
-
-    # ------ demographics stats ------
-    n_participants = single_version_data["LearningTask"]["participant_ID"].nunique()
-    print(f"\nN_participants = {n_participants}")
-    n_female = single_version_data["Demographics"]["gender"].value_counts().get("Female", 0)
-    n_male = single_version_data["Demographics"]["gender"].value_counts().get("Male", 0)
-    n_other = single_version_data["Demographics"]["gender"].value_counts().get("Other", 0)
-    missing_data = n_participants - (n_female + n_male + n_other)
-    print(
-        f"\nGender breakdown: female = {n_female}; male = {n_male}; other = {n_other}; "
-        f"missing_data = {missing_data} (NB: 2 participants in v01 did not complete Demographics/General);"
-    )
-    mean_age = single_version_data["Demographics"]["age"].mean()
-    std_age = single_version_data["Demographics"]["age"].std()
-    print(f"\nage = {mean_age:.2f}±{std_age:.2f} years;")
 
     # ------ ttest Choice accuracy compared to chance, overall in the Learning Task ------
     # get mean correct per participant
@@ -267,7 +247,6 @@ assert set(v11_data["LearningTask"]["exp_ID"].unique()) == {v11}, "Problem: wron
     v11_data["LearningTask"],
     v11_data["SymbolChoice"],
     v11_data["PairChoice"],
-    v11_data["Demographics"],
 )
 
 for independent_variable_name in ["LT_correct_gain_minus_loss", "SC_correct_gain_minus_loss"]:
@@ -282,28 +261,6 @@ for independent_variable_name in ["LT_correct_gain_minus_loss", "SC_correct_gain
         label_prefix="[v11] ",
     )
 
-
-# =============================================================================
-# Demographics stats
-# =============================================================================
-
-print("\n ==================== DEMOGRAPHICS STATS ACROSS ALL 6 VERSIONS ==================== \n")
-
-version = "all"
-dataframes_copy = dataframes.copy()
-all_data = filter_experiment_version(dataframes_copy, version)
-
-n_participants = all_data["LearningTask"]["participant_ID"].nunique()
-print(f"\nN = {n_participants} although 2 participants in v01 did not complete Demographics/General;")
-
-n_female = all_data["Demographics"]["gender"].value_counts().get("Female", 0)
-n_male = all_data["Demographics"]["gender"].value_counts().get("Male", 0)
-n_other = all_data["Demographics"]["gender"].value_counts().get("Other", 0)
-print(f"\nGender breakdown: female = {n_female}; male = {n_male}; other = {n_other};")
-
-mean_age = all_data["Demographics"]["age"].mean()
-std_age = all_data["Demographics"]["age"].std()
-print(f"\nage = {mean_age:.2f}±{std_age:.2f} years;")
 
 # =============================================================================
 # STATS FOR MULTIPLE DATASETS WITH EQUAL DIFFICULTY ACROSS GAIN AND LOSS
@@ -325,7 +282,6 @@ print("\n unique experiment versions: \n", unique_exp_versions)
     first_four_versions_data["LearningTask"],
     first_four_versions_data["SymbolChoice"],
     first_four_versions_data["PairChoice"],
-    first_four_versions_data["Demographics"],
 )
 
 # 1. ANOVA stats: effect of click_desired_0/click_desired_1 x identify_best_0/identify_best_1 on p_chose_highest_EV
@@ -355,7 +311,6 @@ print("----------------- behavioural ttests over combined datasets (versions_equ
 LearningTask = first_four_versions_data["LearningTask"].copy()
 SymbolChoice = first_four_versions_data["SymbolChoice"].copy()
 CFC          = first_four_versions_data["PairChoice"].copy()
-Demographics = first_four_versions_data["Demographics"].copy()
 
 # ------ paired-ttest Choice accuracy in gains vs losses in the Learning Task ------
 # get mean correct per participant
@@ -426,7 +381,6 @@ print("\nunique experiment versions: \n", unique_exp_versions)
     equal_and_asymmetric_data["LearningTask"],
     equal_and_asymmetric_data["SymbolChoice"],
     equal_and_asymmetric_data["PairChoice"],
-    equal_and_asymmetric_data["Demographics"],
 )
 
 # 1. ANOVA stats: effect of difficulty(equal/asymmetric) x CFC(identify_best_1/identify_best_0) on p_chose_highest_EV
@@ -451,7 +405,6 @@ print("\nunique experiment versions: \n", unique_exp_versions)
     asymmetric_data["LearningTask"],
     asymmetric_data["SymbolChoice"],
     asymmetric_data["PairChoice"],
-    asymmetric_data["Demographics"],
 )
 
 # regression stats (p_chose_highest_EV ~ accuracy(gain-loss) + identify_best)

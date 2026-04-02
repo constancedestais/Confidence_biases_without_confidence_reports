@@ -3,7 +3,7 @@ import numpy as np
 from scipy import stats
 from Functions.scale_0_1_to_0_100  import scale_0_1_to_0_100
 
-def prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(LearningTask, SymbolChoice, PairChoice, Demographics):
+def prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(LearningTask, SymbolChoice, PairChoice):
     # ----------- GOAL: average values per participant, trial and valence -----------
     '''
     GOAL: want dataset with one row per participant, with columns for:
@@ -72,12 +72,10 @@ def prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(Lea
     CFC_mean_per_participant = CFC_mean_per_participant.rename(columns={"chose_highest_expected_value": "CFC_chose_highest_expected_value"})
 
     # ------- prepare CFC -------
-    gender = Demographics[['participant_ID','gender']]
 
     # merge all four dataframes
     merged_df = pd.merge(CFC_mean_per_participant, LT_mean_per_participant_per_valence_wide, on=['participant_ID'])
     merged_df = pd.merge(merged_df, SC_mean_per_participant_per_valence_wide, on=['participant_ID'])
-    merged_df = pd.merge(merged_df, gender, on=['participant_ID'])
 
     return [merged_df]
 

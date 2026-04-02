@@ -50,9 +50,6 @@ csv_filenames = {
     'LearningTask': 'CD1_LearningTask.csv',
     'PairChoice'  : 'CD1_PairChoice.csv',
     'SymbolChoice': 'CD1_SymbolChoice.csv',
-    'BonusRound'  : 'CD1_BonusRound.csv',
-    'Demographics': 'CD1_Demographics.csv',
-    'General'     : 'CD1_General.csv'
 }
 
 # create a dictionary to store the dataframes
@@ -81,7 +78,7 @@ version_code = get_version_code(requested_subset)
 [merged_data] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                         dataframes_reduced['SymbolChoice'], 
                                                                                         dataframes_reduced['PairChoice'], 
-                                                                                        dataframes_reduced['Demographics'])
+                                                                                        )
 
 # check that dependent and independent variables are not between 0 and 1
 assert merged_data["CFC_chose_highest_expected_value"].max() > 1.5, "Error: CFC_chose_highest_expected_value values look like they are still coded 0-1"
@@ -109,7 +106,7 @@ version_code = get_version_code(requested_subset)
 [merged_data] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                         dataframes_reduced['SymbolChoice'], 
                                                                                         dataframes_reduced['PairChoice'], 
-                                                                                        dataframes_reduced['Demographics'])
+                                                                                        )
 
 # check that dependent and independent variables are not between 0 and 1
 assert merged_data["CFC_chose_highest_expected_value"].max() > 1.5, "Error: CFC_chose_highest_expected_value values look like they are still coded 0-1"
@@ -138,7 +135,7 @@ version_code = get_version_code(requested_subset)
 [merged_data] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                         dataframes_reduced['SymbolChoice'], 
                                                                                         dataframes_reduced['PairChoice'], 
-                                                                                        dataframes_reduced['Demographics'])
+                                                                                        )
 
 # check that dependent and independent variables are not between 0 and 1
 assert merged_data["CFC_chose_highest_expected_value"].max() > 1.5, "Error: CFC_chose_highest_expected_value values look like they are still coded 0-1"
@@ -302,7 +299,7 @@ for requested_subset in requested_subsets:
     [merged_data_new_pairs_only] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                                             dataframes_reduced['SymbolChoice'], 
                                                                                                             PairChoice_new_pairs_only, 
-                                                                                                            dataframes_reduced['Demographics'])
+                                                                                                            )
 
     # run regression plots
     independent_variables = ['LT_correct_gain_minus_loss', 'SC_correct_gain_minus_loss']
@@ -349,7 +346,7 @@ for requested_subset in requested_subsets:
     [merged_data] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                             dataframes_reduced['SymbolChoice'], 
                                                                                             dataframes_reduced['PairChoice'], 
-                                                                                            dataframes_reduced['Demographics'])
+                                                                                            )
 
 
     # run regression plots
@@ -392,7 +389,7 @@ version_code = get_version_code(requested_subset)
 [merged_data] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                         dataframes_reduced['SymbolChoice'], 
                                                                                         dataframes_reduced['PairChoice'], 
-                                                                                        dataframes_reduced['Demographics'])
+                                                                                        )
 # check that variables are not between 0 and 1
 assert merged_data["CFC_chose_highest_expected_value"].max() > 1.5, "Error: CFC_chose_highest_expected_value values look like they are still coded 0-1"
 assert merged_data['LT_correct_gain_minus_loss'].max() > 1.5, f"Error: {'LT_correct_gain_minus_loss'} values look like they are still coded 0-1" 
@@ -411,7 +408,7 @@ version_code = get_version_code(requested_subset)
 [merged_data] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                          dataframes_reduced['SymbolChoice'], 
                                                                                          dataframes_reduced['PairChoice'], 
-                                                                                         dataframes_reduced['Demographics'])
+                                                                                         )
 
 
 if 'cd1_2025_click_desired_1_identify_best_1' in merged_data['exp_ID'].unique():
@@ -460,7 +457,7 @@ for requested_subset in requested_subsets:
     [merged_data] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                             dataframes_reduced['SymbolChoice'], 
                                                                                             dataframes_reduced['PairChoice'], 
-                                                                                            dataframes_reduced['Demographics'])
+                                                                                            )
     # check that variables are not between 0 and 1
     assert merged_data['LT_correct_gain_minus_loss'].max() > 1.5, f"Error: {'LT_correct_gain_minus_loss'} values look like they are still coded 0-1" 
     assert merged_data['SC_correct_gain_minus_loss'].max() > 1.5, f"Error: {'SC_correct_gain_minus_loss'} values look like they are still coded 0-1" 
@@ -483,7 +480,7 @@ version_code = get_version_code(requested_subset)
 [merged_data] = prepare_data_averaged_by_valence_for_figures_comparing_multiple_datasets(dataframes_reduced['LearningTask'], 
                                                                                         dataframes_reduced['SymbolChoice'], 
                                                                                         dataframes_reduced['PairChoice'], 
-                                                                                        dataframes_reduced['Demographics'])
+                                                                                        )
 # check that variables are not between 0 and 1
 assert merged_data["CFC_chose_highest_expected_value"].max() > 1.5, "Error: CFC_chose_highest_expected_value values look like they are still coded 0-1"
 assert merged_data['LT_correct_gain_minus_loss'].max() > 1.5, f"Error: {'LT_correct_gain_minus_loss'} values look like they are still coded 0-1" 
