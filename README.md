@@ -6,10 +6,8 @@ Code for statistics and figures in paper and Supplementary Material. Paper DOI: 
 
 This repository provides scripts to:
 
-- Load task-level CSV datasets (`LearningTask`, `SymbolChoice`, `PairChoice`, `Demographics`, etc.)
-- Compute participant-level behavioral summaries (including gain-loss contrasts)
-- Run inferential statistics (t-tests, OLS, ANOVAs) for manuscript reporting
-- Generate SVG figures for publication
+- Repeat the statistical analyses presented in the paper based on participant behavioral data
+- Generate figures presented in the paper
 
 
 ## Requirements
